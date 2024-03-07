@@ -1,4 +1,4 @@
-### Official defination of Kubernetes
+### Official Defination of Kubernetes
 
 - Open source container orchestation tool.
 - Developed by Google.
@@ -10,6 +10,7 @@ Supported container runtime in kubernetes such as- **Docker, CRI-O, Containerd**
 
 
 ### What features do orchestration tool offer?
+
 - High Availability or no downtime.
 - Scalability or high performance.
 - Disaster recovery - backup and restore.
@@ -28,9 +29,9 @@ Masternode actually runs several kubernetes processes that are absolutely need t
 
 - API Server: It's also is a container, that actually is the **entry point to the kubernetes cluster** Through this channel different kubernetes clients will talk like-
   
-  - UI: If youre using kubernetes dashboard.
+  - UI:  If youre using kubernetes dashboard.
   - API: If you're using scripts and automating technologies.
-  - CLI- Command line tools.
+  - CLI: Command line tools.
 So, all of above these will talk to API Server.
 
 <img width="472" alt="image" src="https://github.com/engineersakibcse47/Kubernetes/assets/108215990/0c61693b-39c4-401c-85f9-d27111bf80e0">
@@ -40,6 +41,9 @@ So, all of above these will talk to API Server.
 <img width="473" alt="image" src="https://github.com/engineersakibcse47/Kubernetes/assets/108215990/6a7e0147-8b36-4c30-8887-e944bf7d1462">
 
 - Scheduler: Ensures Pods placement. Scheduler decides on which worker Node, new Pod should be scheduled based on worload and the available server resources on each worker node. So, its an intelligent process that decides on which worker node the next Pod should be scheduled.
+
+<img width="547" alt="image" src="https://github.com/engineersakibcse47/Kubernetes/assets/108215990/c1c00e2c-9f74-4b48-803b-c3d30b2835f3">
+
 - etcd: Kubernetes backing store.You can recover the whole cluster state using the etcd.
 
 **Virtual Network:**
