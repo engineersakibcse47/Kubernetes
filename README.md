@@ -27,7 +27,7 @@ Masternode actually runs several kubernetes processes that are absolutely need t
 
 <img width="471" alt="image" src="https://github.com/engineersakibcse47/Kubernetes/assets/108215990/da288cb4-61a3-4fe0-9880-49949c700d4f">
 
-- API Server: It's also is a container, that actually is the **entry point to the kubernetes cluster** Through this channel different kubernetes clients will talk like-
+API Server: It's also is a container, that actually is the **entry point to the kubernetes cluster** Through this channel different kubernetes clients will talk like-
   
   - UI:  If youre using kubernetes dashboard.
   - API: If you're using scripts and automating technologies.
@@ -36,15 +36,15 @@ So, all of above these will talk to API Server.
 
 <img width="472" alt="image" src="https://github.com/engineersakibcse47/Kubernetes/assets/108215990/0c61693b-39c4-401c-85f9-d27111bf80e0">
 
-- Controller Manager: Keeps track of whats happening in the cluster, wheather something need to be repair or container died and need to be restarted etc.
+Controller Manager: Keeps track of whats happening in the cluster, wheather something need to be repair or container died and need to be restarted etc.
 
 <img width="472" alt="image" src="https://github.com/engineersakibcse47/Kubernetes/assets/108215990/6a7e0147-8b36-4c30-8887-e944bf7d1462">
 
-- Scheduler: Ensures Pods placement. Scheduler decides on which worker Node, new Pod should be scheduled based on worload and the available server resources on each worker node. So, its an intelligent process that decides on which worker node the next Pod should be scheduled.
+Scheduler: Ensures Pods placement. Scheduler decides on which worker Node, new Pod should be scheduled based on worload and the available server resources on each worker node. So, its an intelligent process that decides on which worker node the next Pod should be scheduled.
 
 <img width="472" alt="image" src="https://github.com/engineersakibcse47/Kubernetes/assets/108215990/64dde985-9899-47bb-b8a1-30d09385e4d5">
 
-- etcd: Kubernetes backing store.You can recover the whole cluster state using the etcd.
+etcd: Kubernetes backing store.You can recover the whole cluster state using the etcd.
 
 **Virtual Network:**
 It's a very important component of kubernetes which help those nodes, worker nodes and masternodes to talk to each other.
