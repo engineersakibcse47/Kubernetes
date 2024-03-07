@@ -38,11 +38,11 @@ So, all of above these will talk to API Server.
 
 - Controller Manager: Keeps track of whats happening in the cluster, wheather something need to be repair or container died and need to be restarted etc.
 
-<img width="473" alt="image" src="https://github.com/engineersakibcse47/Kubernetes/assets/108215990/6a7e0147-8b36-4c30-8887-e944bf7d1462">
+<img width="472" alt="image" src="https://github.com/engineersakibcse47/Kubernetes/assets/108215990/6a7e0147-8b36-4c30-8887-e944bf7d1462">
 
 - Scheduler: Ensures Pods placement. Scheduler decides on which worker Node, new Pod should be scheduled based on worload and the available server resources on each worker node. So, its an intelligent process that decides on which worker node the next Pod should be scheduled.
 
-<img width="547" alt="image" src="https://github.com/engineersakibcse47/Kubernetes/assets/108215990/c1c00e2c-9f74-4b48-803b-c3d30b2835f3">
+<img width="472" alt="image" src="https://github.com/engineersakibcse47/Kubernetes/assets/108215990/64dde985-9899-47bb-b8a1-30d09385e4d5">
 
 - etcd: Kubernetes backing store.You can recover the whole cluster state using the etcd.
 
