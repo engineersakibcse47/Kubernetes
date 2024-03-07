@@ -45,7 +45,8 @@ So, all of above these will talk to API Server.
 
 <img width="472" alt="image" src="https://github.com/engineersakibcse47/Kubernetes/assets/108215990/64dde985-9899-47bb-b8a1-30d09385e4d5">
 
-- etcd: Kubernetes backing store.You can recover the whole cluster state using the etcd.
+- etcd: Etcd holds the current status of any K8s components. From etcd kubernets get status data of components to upate status continously. So, it's a kubernetes backing store. You can recover the whole cluster state using the etcd.
+  - Cluster Brain, Key Value Store.
 
 **Virtual Network:**
 It's a very important component of kubernetes which help those nodes, worker nodes and masternodes to talk to each other.
@@ -102,6 +103,28 @@ In short, Kubernetes Nodes-
 <img width="500" alt="image" src="https://github.com/engineersakibcse47/Kubernetes/assets/108215990/63998321-4785-4c18-aeac-add3b9c87cad">
 
 Just using these components you can actually build pretty powerful K8s Clusters.
+
+### Kubernetes Configuration
+
+Each configuration file has 3 parts, metadata, specification and status. Status generated and added atumatically by kubernetes. 
+
+### What is Minikube?
+
+<img width="600" alt="image" src="https://github.com/engineersakibcse47/Kubernetes/assets/108215990/a379feb7-a180-4500-9f4e-db77f48a9b3c">
+
+Basically one node cluster where Master Node and Worker Nodes processes both run on ONE Machine with Docker runtime pre-installed.  
+
+### What is kubectl?
+
+<img width="600" alt="image" src="https://github.com/engineersakibcse47/Kubernetes/assets/108215990/e64a02bd-c90b-4aa8-8db3-7e9cb5a217e0">
+
+After setup minikube cluster, you need some way to interact with that cluster so you need a way to create pods and other kubernetes components on the node and the way to do it using kubectl, which is **Command line tool** for K8s Cluster. 
+
+Lets talk, how actaully it works, as we know minikube runs master and work node process, so one of the master node process called **API Server** is actually the main entrypoint into the kubernetes cluster, so if you want to do anything inside cluster you first have to talk to the API Server and way to talk to the API Server is through different clients like- UI, API, CLI etc. KUBECTL(CLI) is the most powerful of 3 clients. 
+
+### Minikube and Kubectl- Setup K8s cluster locally
+
+
 
 The End!!!!
 
